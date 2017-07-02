@@ -12,10 +12,10 @@ From this repository run:
   docker build -t simiki .
 
 Using the Docker image
-======================
+----------------------
 
 You can simply pass Simiki commands to the Docker run command.
-For a full list of commands the the Simiki Quick Start guide and documentation:
+For a full list of commands see the Simiki Quick Start guide and documentation:
 
 - Quick Start guide: http://simiki.org/docs/usage.html
 - Usage Documentation: http://simiki.org/docs/usage.html
