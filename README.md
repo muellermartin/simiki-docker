@@ -1,8 +1,6 @@
-Simiki Docker
-=============
+# Simiki Docker
 
-Building the Docker image
-=========================
+## Building the Docker image
 
 From this repository run:
 
@@ -10,8 +8,7 @@ From this repository run:
 docker build -t simiki .
 ```
 
-Using the Docker image
-----------------------
+## Using the Docker image
 
 You can simply pass Simiki commands to the Docker run command.
 For a full list of commands see the Simiki Quick Start guide and documentation:
@@ -19,15 +16,13 @@ For a full list of commands see the Simiki Quick Start guide and documentation:
 - Quick Start guide: http://simiki.org/docs/usage.html
 - Usage Documentation: http://simiki.org/docs/usage.html
 
-Initializing a new wiki
------------------------
+### Initializing a new wiki
 
 ```
 docker run --rm -it -v $(PWD)/wiki:/wiki simiki init
 ```
 
-Generate wiki pages
--------------------
+### Generate wiki pages
 
 ```
 docker run --rm -v $(PWD)/wiki:/wiki simiki g
@@ -38,8 +33,7 @@ by adding `-e TZ=UTC`. This prevents an `UnknownTimeZoneError(zone)`
 exception (`pytz.exceptions.UnknownTimeZoneError: 'local'`) when
 generating the pages.
 
-Preview/Show the wiki
----------------------
+### Preview/Show the wiki
 
 ```
 docker run -v $(PWD)/wiki:/wiki -p 8000:8000 simiki p --host 0.0.0.0
